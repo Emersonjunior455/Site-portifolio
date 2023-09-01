@@ -1,0 +1,115 @@
+/* Reset de estilos */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .project {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    display: block;
+    /* Isso alinhará as imagens ao centro */
+    margin: 0 auto;
+    /* Isso centralizará as imagens horizontalmente */
+}
+.project h3 {
+    font-size: 18px;
+    color: #333;
+    /* Cor do título */
+    margin-top: 10px;
+    /* Espaçamento acima do título */
+}
+
+.project h4,
+.project h5 {
+    font-size: 16px;
+    color: #333;
+    /* Cor do título */
+    margin-top: 10px;
+    /* Espaçamento acima do título */
+}.project a button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.project a button:hover {
+    background-color: #555;
+    /* Mudança de cor ao passar o mouse */
+}
